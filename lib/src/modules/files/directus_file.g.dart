@@ -23,7 +23,7 @@ DirectusFile _$DirectusFileFromJson(Map<String, dynamic> json) => DirectusFile(
           ? null
           : DateTime.parse(json['modified_on'] as String),
       charset: json['charset'] as String?,
-      filesize: json['filesize'] as int?,
+      filesize: json['filesize'] as String?,
       width: json['width'] as int?,
       height: json['height'] as int?,
       duration: json['duration'] as int?,

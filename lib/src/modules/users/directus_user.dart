@@ -12,6 +12,7 @@ class DirectusUser {
   String? location;
   String? title;
   String? description;
+  String? phoneNumber;
   List<String>? tags;
 
   /// Either [String] or [DirectusFile].
@@ -32,6 +33,7 @@ class DirectusUser {
     this.location,
     this.title,
     this.description,
+    this.phoneNumber,
     this.tags,
     this.avatar,
     this.language,

@@ -13,6 +13,7 @@ class DirectusUser {
   String? title;
   String? description;
   String? phoneNumber;
+  String? asrToken;
   List<String>? tags;
 
   /// Either [String] or [DirectusFile].
@@ -34,6 +35,7 @@ class DirectusUser {
     this.title,
     this.description,
     this.phoneNumber,
+    this.asrToken,
     this.tags,
     this.avatar,
     this.language,

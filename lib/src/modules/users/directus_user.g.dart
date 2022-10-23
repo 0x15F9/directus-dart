@@ -16,6 +16,7 @@ DirectusUser _$DirectusUserFromJson(Map<String, dynamic> json) => DirectusUser(
       title: json['title'] as String?,
       description: json['description'] as String?,
       phoneNumber: json['phoneNumber'] as String?,
+      asrToken: json['asr_token'] as String?,
       tags: (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList(),
       avatar: json['avatar'],
       language: json['language'] as String?,
@@ -48,5 +49,6 @@ Map<String, dynamic> _$DirectusUserToJson(DirectusUser instance) {
   writeNotNull('theme', instance.theme);
   writeNotNull('status', instance.status);
   writeNotNull('role', instance.role);
+  writeNotNull('asr_token', instance.asrToken);
   return val;
 }
